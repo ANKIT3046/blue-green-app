@@ -8,7 +8,7 @@ steps:
          PROJECT=$$(gcloud config get-value core/project)          
          gke-gcloud-auth-plugin --version
          export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-         gcloud container clusters get-credentials "gke-cluster" --project "macro-approach-441906-c2"  --zone "europe-west1-b"  
+         gcloud container clusters get-credentials "gke-cluster" --project "macro-approach-441906-c2"  --zone "us-central1-a"  
          kubectl patch service blue-green-service -p '{"spec":{"selector":{"app":"green"}}}'
 
 options:
