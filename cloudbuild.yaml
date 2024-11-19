@@ -41,3 +41,8 @@ steps:
          kubectl apply -f blue.yaml
          kubectl apply -f green.yaml
          kubectl apply -f service-test.yaml
+
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
