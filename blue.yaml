@@ -22,3 +22,8 @@ spec:
         image: europe-west1-docker.pkg.dev/macro-approach-441906-c2/web-app-repo/my-app:blue
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: "100m"
+          limits:
+            cpu: "200m"
